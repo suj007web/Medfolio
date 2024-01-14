@@ -1,0 +1,208 @@
+@font-face {
+    font-family: nb;
+    src: url(./texts/NBInternationalProBoo.ttf);
+}
+
+@font-face {
+    font-family: medi;
+    src: url(./texts/Rejouice-Headline.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'nb';
+    -webkit-tap-highlight-color: transparent;
+}
+*::selection{
+    background-color: transparent;
+    
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+   
+    position: relative;
+}
+
+#cursor{
+    height: 7em;
+    width: 7em;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.682);
+
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#cursor h5{
+    font-size: 1.2vw;
+}
+
+#page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+#page1-content{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.315);
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 2;
+    
+    padding: 2vw 3vw;
+}
+
+nav h3{
+    font-size: 2rem;
+    font-weight: 100;
+}
+nav h4{
+    font-size: 1.8rem;
+}
+#page1-content h1{
+    font-family: "medi";
+    font-size: 20vw;
+    z-index: 2;
+}
+#page1-content h1 span{
+    font-family: "medi";
+    font-size: 20vw;
+}
+
+.menu{
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.quote{
+    padding: 1rem;
+}
+
+.loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    z-index: 3;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+.loader h3{
+    font-size: 2rem;
+}
+
+.navbar{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.24);
+    position: absolute;
+    z-index: 3;
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    transform: translateY(-100%);
+    transition: transform 1s ease;
+    
+}
+
+.navbar.active {
+    transform: translateY(0);
+}
+
+.navbar .crossdiv{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.cross{
+    font-size: 3rem;
+    color: white;
+    text-shadow: 1px black;
+    padding: 1rem;
+    cursor: pointer;
+    
+    
+}
+
+.navitems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 5px black;
+}
+.nav-item{
+    color: white;
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+    
+}
+.nav-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; 
+    height: 2px; 
+    background-color: white; 
+    transition: width 0.3s ease; 
+}
+
+.nav-item:hover::before {
+    width: 100%; 
+}
+
+
+@media only screen and (max-width: 600px) {
+    #cursor{
+        display: none;
+    }
+    .nav-item{
+        font-size: 2rem;
+        
+    }
+    #page1-content h1{
+        padding-bottom: 5rem;
+    }
+    .loader{
+        padding-left: 1rem;
+    }
+    .navbar{
+        height: 100vh;
+    }
+}
