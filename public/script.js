@@ -66,14 +66,30 @@ tl.to(".loader", {
     display: "none"
 })
 var navbar = document.querySelector(".navbar");
+var navitems = document.querySelector(".navitems");
+var about= document.getElementById("about");
+var About = document.querySelector(".About");
+
+
+about.addEventListener("click", function () {
+    navitems.classList.toggle("hidden");
+    About.classList.toggle("visible");
+
+});
+
+
 
 menu.addEventListener("click", function () {
     navbar.classList.toggle("active");
+    About.classList.toggle("hidden");
+    
 });
 
 var cross = document.querySelector(".cross")
 
 cross.addEventListener("click", function () {
-    navbar.classList.toggle("active");
+    About.classList.toggle("hidden");
+   navbar.classList.toggle("active");
+  
 });
 

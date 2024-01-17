@@ -136,6 +136,57 @@ nav h4{
     
 }
 
+.navbar .About{  
+
+    height: 89%;
+    width: 100%;
+   /* background-color: rgba(0, 0, 0, 0.24);*/
+    position: absolute;
+    z-index: 3;
+   transform: translateY(-81%);
+    transition: transform 1s ease;
+}
+.About .abo-items{
+    top: 5%;
+    width: 60%;
+    margin: 20px 20px;
+    position: absolute;
+    flex-flow: column;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    font-size: 29px;
+    text-shadow: 5px black;
+}
+.abo-items p{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 18px 6px;
+    padding: 0px 0px;
+    text-align: center;
+}
+
+.abo-items h1{
+    margin: 11px 5px;
+}
+
+.abo-items h2{
+    margin: 0px 5px;
+    font-size: 30px;
+}
+.About .vector{
+
+background-image: url(../public/images/undraw_Booking_re_gw4j.png);
+    position: absolute;
+    height: 10%;
+    right: 5px;
+    top: 20%;
+}
 .navbar.active {
     transform: translateY(0);
 }
@@ -164,6 +215,12 @@ nav h4{
     font-size: 3rem;
     color: white;
     text-shadow: 5px black;
+}
+.hidden{
+    visibility: hidden;
+}
+.visible{
+    visibility: visible;
 }
 .nav-item{
     color: white;
