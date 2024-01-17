@@ -159,7 +159,7 @@ nav h4{
     justify-content: center;
     align-items: center;
     height: 70%;
-    font-size: 29px;
+    font-size: 26px;
     text-shadow: 5px black;
 }
 .abo-items p{
@@ -167,8 +167,17 @@ nav h4{
     justify-content: center;
     display: flex;
     margin: 18px 6px;
-    padding: 0px 0px;
+    padding: 0px 10px;
     text-align: center;
+}
+.abo-items ul{
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    margin: 10px 31px;
+    padding: 0px 0px;
+    text-align: left;
 }
 
 .abo-items h1{
