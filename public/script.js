@@ -7,8 +7,7 @@ page1Content.addEventListener('mousemove',(det)=>{
         x: det.x,
         y: det.y
     })
-} )
-
+})
 page1Content.addEventListener("mouseenter", ()=>{
     gsap.to(cursor,{
         scale: 1,

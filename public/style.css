@@ -179,12 +179,11 @@ nav h4{
     margin: 0px 5px;
     font-size: 30px;
 }
-.About .vector{
-
-background-image: url(../public/images/undraw_Booking_re_gw4j.png);
+.navbar .About .vector{
+    width: 5%;
     position: absolute;
     height: 10%;
-    right: 5px;
+    right: 32%;
     top: 20%;
 }
 .navbar.active {
