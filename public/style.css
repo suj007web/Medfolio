@@ -195,7 +195,7 @@ nav h4{
     right: 32%;
     top: 20%;
 }
-.navbar.active {
+.active {
     transform: translateY(0);
 }
 
@@ -205,13 +205,22 @@ nav h4{
 }
 
 .cross{
+    
+    margin: 5px;
     font-size: 3rem;
     color: white;
     text-shadow: 1px black;
     padding: 1rem;
     cursor: pointer;
-    
-    
+  
+}
+.fa-arrow-left{
+    margin: 5px;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 1px black;
+    padding: 1rem;
+    cursor: pointer;
 }
 
 .navitems{
